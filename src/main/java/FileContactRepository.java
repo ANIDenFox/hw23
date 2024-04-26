@@ -9,9 +9,9 @@ class FileContactRepository implements ContactRepository {
         this.contacts = new ArrayList<>();
         this.fileName = fileName;
         if (!fileExists(fileName)) {
-            saveContacts(); // Створюємо файл, якщо він не існує
+            saveContacts(); 
         } else {
-            loadContacts(); // Якщо файл існує, завантажуємо контакти
+            loadContacts();
         }
     }
 
