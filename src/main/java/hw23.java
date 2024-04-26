@@ -1,6 +1,7 @@
 import javax.swing.*;
 
- public static void main(String[] args) {
+public class hw23 {
+    public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             ContactRepository repository = new FileContactRepository("contacts.txt");
             ContactModel model = new ContactModel(repository);
